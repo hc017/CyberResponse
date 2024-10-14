@@ -11,7 +11,7 @@ const Footer = () => {
       <div className="image-remofgvsfvebg-preview-1">
               <img src={Logo} alt="Description of the image" />
             </div>
-        <h1 class="footer__logo">CyberSoochna</h1>
+        <h1 class="footer__logo">CyberResponse</h1>
         <address>
           A Resilient Framework for collecting and responding to digital crimes and frauds
           <br />
@@ -75,7 +75,7 @@ const Footer = () => {
       </ul>
 
       <div class="legal">
-        <p>&copy; 2024 Something. All rights reserved.</p>
+        <p>&copy; 2024 CyberResponse. All rights reserved.</p>
 
       </div>
     </footer>
