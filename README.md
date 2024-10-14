@@ -1,5 +1,5 @@
 #  CyberResponse- A resilient Framework for collecting and responding to digital crimes and frauds
-Welcome to the CyberSoochna! This project is a ReactJS and Firebase based incident management solution used for reporting, tracking and automatically assigning cases and categorizing them for the users. Whether you're a business owner interested in our platform, or just a curious user, this README will guide you through the essential details of our project. 
+Welcome to the CyberResponse! This project is a ReactJS and Firebase based incident management solution used for reporting, tracking and automatically assigning cases and categorizing them for the users. Whether you're a business owner interested in our platform, or just a curious user, this README will guide you through the essential details of our project. 
 ## Table of Contents
 - [Features](#features)
 - [Technologies Used](#technologies-used)
@@ -8,23 +8,18 @@ Welcome to the CyberSoochna! This project is a ReactJS and Firebase based incide
 - [Contributing](#contributing)
 - [License](#license)
 ## Features
-The CyberSoochna Incident Response Portal includes:
+The CyberResponse Incident Response Portal includes:
 
 - **Issue Reporting**: Users can report issues with detailed descriptions.
 - **Automatic Categorization**: Issues are automatically categorized based on predefined rules or algorithms.
 - **User Authentication**: Secure registration and login process for users.
 - **Issue Tracking**: Users can track the status of their reported issues in real-time.
-- **Admin Panel**: Admins can view, assign, and manage reported issues through a comprehensive dashboard.
 - **Notifications**: Real-time notifications for users and admins on issue updates.
 - **Responsive Design**: A mobile-friendly user interface for a seamless experience across all devices.
 
 ## Technologies Used
 - **React**: A popular JavaScript library for building user interfaces.
 - **React Router**: For handling navigation within the application. The react router we used (react-router-dom) is v6. 
-- **Firebase**: A comprehensive platform for building web applications.
-  - **Firestore**: A NoSQL database for storing and syncing data in real-time.
-  - **Functions**: Serverless functions for backend logic.
-  - **Authentication**: Secure user authentication and authorization.
 - **Redux**: A state management library for predictable application state.
 - **Tailwind CSS**: For styling the user interface.
 - **BootStrap**: For responsive development. 
@@ -71,40 +66,6 @@ To get started with the CyberSoochna Incident Response Portal, follow these step
    
 6. Access the application in your web browser at `http://localhost:3000`.
 
-Additional Steps for Firebase Configuration
-Since CyberSoochna uses Firebase for its backend services, you may need to set up Firebase services:
-
-1. Firebase Project Setup
-Create a new project on the [Firebase Console](https://console.firebase.google.com/).
-
-2. Add Firebase SDK
-Configure your Firebase project by adding the Firebase SDK to your project. Update your `.env` file with your Firebase project credentials.
-
-3. Deploy Firebase Functions (Optional)
-If you have Firebase functions that need to be deployed, navigate to the functions directory and run the following commands:
-   ```bash
-   cd functions
-   npm install
-   firebase deploy --only functions
-   ```
-## Usage
-Configuration of your firebase account. Login to your google account and create a new firebase project [click here](https://console.firebase.google.com/u/0/)
-
-Create a FirebaseConfig.js file and add the following variables:
-SAMPLE CONFIG, you should put the actual config details found on your project settings.
-```
-      const firebaseConfig = {
-        apiKey: "yourapikey",
-        authDomain: "yourauthdomin.firebaseapp.com",
-        databaseURL: "yourdburl.firebasedatabase.app/",
-        projectId: "yourproject-id",
-        storageBucket: "yourstoragebucket.appspot.com",
-        messagingSenderId: "yourmessageid",
-        appId: "1:370994734512:web:3e82c1a31746693779e275",
-        measurementId: "G-STG4B5C20Z"
-      };
-   ``` 
-After setting up necessary configuration, create a Realtime Database and start the development server.
 
 ## Contributing
 If you have any suggestions on what to improve in this website, please make a issue share your ideas and create your pull request.
