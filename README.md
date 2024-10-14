@@ -43,7 +43,7 @@ To get started with the CyberSoochna Incident Response Portal, follow these step
 1. Make a directory where you want to clone this repository to your local machine using Git.
 
    ```bash
-   git clone https://github.com/hc017/CyberSoochna.git
+   git clone https://github.com/hc017/CyberResponse.git
 
 2. Open the project in any IDE or editor and navigate to cloned repository directory.
    ```bash
