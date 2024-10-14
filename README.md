@@ -1,70 +1,115 @@
-# Getting Started with Create React App
+#  CyberSoochna- A resilient Framework for collecting and responding to digital crimes and frauds
+Welcome to the CyberSoochna! This project is a ReactJS and Firebase based incident management solution used for reporting, tracking and automatically assigning cases and categorizing them for the users. Whether you're a business owner interested in our platform, or just a curious user, this README will guide you through the essential details of our project. 
+## Table of Contents
+- [Features](#features)
+- [Technologies Used](#technologies-used)
+- [Installation](#installation)
+- [Usage](#usage)
+- [Contributing](#contributing)
+- [License](#license)
+## Features
+The CyberSoochna Incident Response Portal includes:
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+- **Issue Reporting**: Users can report issues with detailed descriptions.
+- **Automatic Categorization**: Issues are automatically categorized based on predefined rules or algorithms.
+- **User Authentication**: Secure registration and login process for users.
+- **Issue Tracking**: Users can track the status of their reported issues in real-time.
+- **Admin Panel**: Admins can view, assign, and manage reported issues through a comprehensive dashboard.
+- **Notifications**: Real-time notifications for users and admins on issue updates.
+- **Responsive Design**: A mobile-friendly user interface for a seamless experience across all devices.
 
-## Available Scripts
+## Technologies Used
+- **React**: A popular JavaScript library for building user interfaces.
+- **React Router**: For handling navigation within the application. The react router we used (react-router-dom) is v6. 
+- **Firebase**: A comprehensive platform for building web applications.
+  - **Firestore**: A NoSQL database for storing and syncing data in real-time.
+  - **Functions**: Serverless functions for backend logic.
+  - **Authentication**: Secure user authentication and authorization.
+- **Redux**: A state management library for predictable application state.
+- **Tailwind CSS**: For styling the user interface.
+- **BootStrap**: For responsive development. 
 
-In the project directory, you can run:
+## Installation
+### Prerequisites
 
-### `npm start`
+Before you begin, ensure you have the following installed on your local machine:
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+- **Node.js** (v14.x or higher)
+- **npm** (v6.x or higher) or **Yarn**
+- **Git**
+  
+To get started with the CyberSoochna Incident Response Portal, follow these steps:
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+1. Make a directory where you want to clone this repository to your local machine using Git.
 
-### `npm test`
+   ```bash
+   git clone https://github.com/hc017/CyberSoochna.git
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+2. Open the project in any IDE or editor and navigate to cloned repository directory.
+   ```bash
+   cd cybersoochna
+   
+3. Install dependencies from the terminal.
+   ```bash
+   npm install
+   ```
+   OR
+   ```bash
+   yarn install
+   ```
+   
+4. Create a .env file or rename .env.example to .env and add your own configuration.
 
-### `npm run build`
+5. Now you can run the project, start the development server.
+   ```bash
+   npm start
+   ```
+    OR
+   ```bash
+   yarn start
+   ```
+   
+6. Access the application in your web browser at `http://localhost:3000`.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+Additional Steps for Firebase Configuration
+Since CyberSoochna uses Firebase for its backend services, you may need to set up Firebase services:
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+1. Firebase Project Setup
+Create a new project on the [Firebase Console](https://console.firebase.google.com/).
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+2. Add Firebase SDK
+Configure your Firebase project by adding the Firebase SDK to your project. Update your `.env` file with your Firebase project credentials.
 
-### `npm run eject`
+3. Deploy Firebase Functions (Optional)
+If you have Firebase functions that need to be deployed, navigate to the functions directory and run the following commands:
+   ```bash
+   cd functions
+   npm install
+   firebase deploy --only functions
+   ```
+## Usage
+Configuration of your firebase account. Login to your google account and create a new firebase project [click here](https://console.firebase.google.com/u/0/)
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+Create a FirebaseConfig.js file and add the following variables:
+SAMPLE CONFIG, you should put the actual config details found on your project settings.
+```
+      const firebaseConfig = {
+        apiKey: "yourapikey",
+        authDomain: "yourauthdomin.firebaseapp.com",
+        databaseURL: "yourdburl.firebasedatabase.app/",
+        projectId: "yourproject-id",
+        storageBucket: "yourstoragebucket.appspot.com",
+        messagingSenderId: "yourmessageid",
+        appId: "1:370994734512:web:3e82c1a31746693779e275",
+        measurementId: "G-STG4B5C20Z"
+      };
+   ``` 
+After setting up necessary configuration, create a Realtime Database and start the development server.
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## Contributing
+If you have any suggestions on what to improve in this website, please make a issue share your ideas and create your pull request.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+## License
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+This project is licensed under the Apache License 2.0. You can freely use, modify, and distribute this software as per the terms of the license.
+For more detailed information, you can refer to the [Apache License 2.0](http://www.apache.org/licenses/LICENSE-2.0).
