@@ -1,0 +1,79 @@
+/* Base styles */
+.UP_container{
+    width: 100%;
+    height: 2rem;
+    display: flex;
+    border-radius: 1rem;
+    padding-left: 10%;
+    background-color: #a4e1f4;
+}
+.ud_text{
+    width: 40%;
+    height: 1rem;
+    display: flex;
+}
+.ud_mail{
+    width: 40%;
+    height: 2rem;
+    display: flex;
+    text-align: right;
+}
+.ud_text_in,.ud_mail_text{
+    margin: 1%;
+    font-size: 1.2rem;
+    font-family: poppins;
+}
+.ud_mail_text{
+    text-align: right;
+    margin-left: 0.4rem;
+}
+.log_btn{
+    width: 6%;
+    height: 1.5rem;
+    margin-top: 0.3%;
+    margin-left: 3%;
+    border-radius: 10px;
+    background-color: #79b3ee;
+    text-decoration: none;
+
+}
+.log_2{
+    font-size: 1rem;
+    font-weight: 500;
+    font-family: poppins;
+    margin: 0;
+    margin-top: 4%;
+    margin-left: 20%;
+    text-decoration: none;
+
+}
+.log_3{
+    text-decoration: none;
+}
+.log_btn:hover {
+    background-color: rgb(255, 22, 65);
+}
+.log_2:hover{
+    color: white;
+}
+.ufp_icons_user{
+    height: 95%;
+    width: 7%;
+    margin: 0.5rem 0rem 0rem 0.4rem;
+}
+.ufp_icons_mail{
+    height: 70%;
+    width: 7%;
+    margin: 0.4rem 0rem 0rem 20rem;
+}
+
+
+
+
+
+
+
+
+
+
+

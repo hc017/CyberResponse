@@ -1,0 +1,304 @@
+.register-page {
+  width: 100%;
+  height: 100%;
+  background-color: black;
+  padding-bottom: 0.5rem;
+}
+
+.inner-register {
+  width: 100%;
+  height: 100%;
+  background-color: black;
+}
+
+.reg-where-to-location {
+  background-color: black;
+  display: flex;
+}
+
+.visit-home {
+  width: 5%;
+  margin: 0.5rem 0 0.5rem 13.3rem;
+  font-size: 1.2rem;
+  font-weight: bold;
+  text-align: center;
+  color: #a4e1f4;
+  text-decoration: none;
+}
+
+.arrow-img {
+  width: 1.3%;
+}
+
+.reg-text {
+  color: #a4e1f4;
+  margin: 0.5rem 0 0.5rem 0.5rem;
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+.register-rectangle {
+  width: 75%;
+  height: 100%;
+  padding: 0.5rem 0 1.5rem 0;
+  margin: 1rem 0 1rem 12rem;
+  background-color: #222;
+  display: flex;
+}
+
+.left-register {
+  width: 50%;
+  background-color: #222;
+}
+
+.register-to-Complaint {
+  width: 100%;
+  margin: 0;
+  margin-top: 4%;
+  margin-left: 30%;
+  margin-bottom: 2%;
+  font-size: 1.5rem;
+  color: #a4e1f4;
+}
+
+.register-horizontal-line {
+  width: 80%;
+  height: 0.12vh;
+  margin-bottom: 5%;
+  margin-left: 10%;
+
+  background-color: #606060;
+}
+
+.R_vi_input {
+  width: 97%;
+  height: 2.2rem;
+  margin-left: 5%;
+  padding-left: 0.8rem;
+  border-radius: 5px;
+  box-shadow: inset 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+  background-color: #d9d9d9;
+  color: #767676;
+  border: none;
+}
+.mobile{
+  width: 97%;
+  height: 2.2rem;
+  margin-left: 5%;
+  border-radius: 5px;
+  box-shadow: inset 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+  background-color: #d9d9d9;
+  color: #767676;
+  border: none;
+}
+.ldiv {
+  width: 25%;
+  margin-left: 3%;
+  height: auto;
+  color: white;
+}
+.VIdiv {
+  width: 60%;
+  height: auto;
+}
+.R_Vi_container {
+  width: 90%;
+  height: 2.2rem;
+  margin-bottom: 5%;
+  display: flex;
+  justify-content: center; /* Center horizontally */
+  align-items: center; /* Center vertically */
+  text-decoration: none; /* Remove default link underline */
+}
+#ur_otp{
+  /* flex-direction: column; */
+  margin-left: 5%;
+  background-color: #00bd68;
+
+}
+.R_VI_text {
+  width: 30%;
+  margin-left: 5%;
+  justify-content: center; /* Center horizontally */
+  align-items: center; /* Center vertically */
+  text-decoration: none; /* Remove default link underline */
+}
+#VIT_otp{
+    width: 40%;
+    margin: 0;
+    margin-left: 30%;
+}
+.otp_container{
+  width: 100%;
+  display: flex;
+}
+.otp_vi_input{
+  width: 100%;
+  height: 2.2rem;
+  padding-left: 0.8rem;
+  border-radius: 5px;
+  box-shadow: inset 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+  background-color: #d9d9d9;
+  color: #767676;
+  border: none;
+}
+#VIT_input{
+    width: 87%;
+    margin-left: 8.6%;
+}
+.otp_btn {
+  width: 60%;
+  margin: 5% 0 0 20%;
+}
+
+.R_BTN {
+  width: 30%;
+  background-color: rgba(75, 74, 74, 0.905);
+  border-radius: 8px;
+  border-width: 0;
+  color: #fffcfc;
+  cursor: pointer;
+  display: inline-block;
+  font-family: "Haas Grot Text R Web", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 20px;
+  list-style: none;
+  margin-left: 9%;
+  padding: 10px 12px;
+  text-align: center;
+  transition: all 200ms;
+  vertical-align: baseline;
+  white-space: nowrap;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
+#recaptcha {
+  display: inline-block;
+  margin-top: 6%;
+  margin-left: 20%; /* Adjust margin-left as needed */
+}
+
+.login-existinguser {
+  width: 17.5vw;
+  height: 5.3vh;
+  flex-grow: 0;
+  margin: 2.5rem 4.9rem 0.56rem 8rem;
+  font-size: 1.125rem;
+  font-weight: 300;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  text-align: left;
+  color: #fff;
+}
+
+.button-41:hover {
+  background: #00bd68;
+}
+
+.confirm-register-button,.reg-cancel-button {
+  background-color: initial;
+  background-image: linear-gradient(-180deg, #00D775, #00BD68);
+  border-radius: 5px;
+  box-shadow: rgba(0, 0, 0, 0.1) 0 2px 4px;
+  color: #FFFFFF;
+  cursor: pointer;
+  display: inline-block;
+  font-family: Inter,-apple-system,system-ui,Roboto,"Helvetica Neue",Arial,sans-serif;
+  height: 44px;
+  line-height: 44px;
+  outline: 0;
+  overflow: hidden;
+  padding: 0 20px;
+  pointer-events: auto;
+  position: relative;
+  text-align: center;
+  text-decoration: none;
+  touch-action: manipulation;
+  user-select: none;
+  -webkit-user-select: none;
+  vertical-align: top;
+  white-space: nowrap;
+  width: 80%;
+  margin-left: 10%;
+  z-index: 9;
+  border: 0;
+}
+
+.confirm-register-button:hover {
+  background-image: #268ef7;
+  color: black;
+  transform:scale(105%) ;
+}
+
+.reg-cancel-button {
+    background-image: linear-gradient(-180deg, #ff2200, #b44b09);
+    margin-top: 2%; 
+}
+
+.reg-cancel-button:hover {
+  background-color: #f00;
+  color: black;
+}
+
+.reg-middle-line {
+  width: 0.1%;
+  position: relative;
+  background-color: #606060;
+}
+
+.register-verticle-line {
+  position: absolute;
+}
+
+.right-instructions {
+  width: 50%;
+}
+
+
+
+/* ------------------------------------------------------------------------------------------------------- */
+
+
+
+
+.register-CHECK-LIST-FOR-COMPLAINANT {
+  width: 100%;
+  font-size: 1.5rem;
+  font-weight: bold;
+  text-align: center;
+  color: #f00;
+}
+.register-infotext {
+  width: 100%;
+  font-size: 1rem;
+  text-align: center;
+  color: #f50000;
+}
+.register-mandatory-info {
+  width: 100%;
+  height: 66.2vh;
+  margin: 0;
+  padding-left: 2%;
+  font-size: 0.75rem;
+  text-align: left;
+  color: #fff;
+  float: right;
+}
+
+.reg-text-style-1 {
+  font-weight: bold;
+  font-size: 0.93rem;
+}
+
+.reg-Optional-Desirable-Information {
+  font-weight: bold;
+  font-size: 0.93rem;
+}
+.reg-info-ol {
+  font-size: 0.81rem;
+}
