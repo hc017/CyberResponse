@@ -1,10 +1,9 @@
-#  CyberResponse- A resilient Framework for collecting and responding to digital crimes and frauds
+#  CyberResponse - A resilient Framework for collecting and responding to digital crimes and frauds
 Welcome to the CyberResponse! This project is a ReactJS and Firebase based incident management solution used for reporting, tracking and automatically assigning cases and categorizing them for the users. Whether you're a business owner interested in our platform, or just a curious user, this README will guide you through the essential details of our project. 
 ## Table of Contents
 - [Features](#features)
 - [Technologies Used](#technologies-used)
 - [Installation](#installation)
-- [Usage](#usage)
 - [Contributing](#contributing)
 - [License](#license)
 ## Features
@@ -33,7 +32,7 @@ Before you begin, ensure you have the following installed on your local machine:
 - **npm** (v6.x or higher) or **Yarn**
 - **Git**
   
-To get started with the CyberSoochna Incident Response Portal, follow these steps:
+To get started with the CyberResponse Incident Response Portal, follow these steps:
 
 1. Make a directory where you want to clone this repository to your local machine using Git.
 
@@ -42,7 +41,7 @@ To get started with the CyberSoochna Incident Response Portal, follow these step
 
 2. Open the project in any IDE or editor and navigate to cloned repository directory.
    ```bash
-   cd cybersoochna
+   cd cyberresponse
    
 3. Install dependencies from the terminal.
    ```bash
