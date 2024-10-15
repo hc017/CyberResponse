@@ -16,8 +16,8 @@ variables:
   dockerfilePath: '$(Build.SourcesDirectory)/Dockerfile'
   tag: '$(Build.BuildId)'
 
-  # Agent VM image name
-  vmImageName: 'ubuntu-latest'
+  # Custom agent pool name (replace with your own pool name)
+  agentPoolName: 'cyberresponsetest1'
 
 stages:
 - stage: Build
@@ -26,7 +26,8 @@ stages:
   - job: Build
     displayName: Build
     pool:
-      vmImage: $(vmImageName)
+      name: $(agentPoolName)  # Use your own laptop agent pool
+      
     steps:
     - task: Docker@2
       displayName: Build and push an image to container registry
