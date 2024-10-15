@@ -52,9 +52,7 @@ To get started with the CyberResponse Incident Response Portal, follow these ste
    yarn install
    ```
    
-4. Create a .env file or rename .env.example to .env and add your own configuration.
-
-5. Now you can run the project, start the development server.
+4. Now you can run the project, start the development server.
    ```bash
    npm start
    ```
@@ -63,7 +61,7 @@ To get started with the CyberResponse Incident Response Portal, follow these ste
    yarn start
    ```
    
-6. Access the application in your web browser at `http://localhost:3000`.
+5. Access the application in your web browser at `http://localhost:3000`.
 
 
 ## Contributing
