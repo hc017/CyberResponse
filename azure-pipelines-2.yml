@@ -12,7 +12,7 @@ variables:
   # Container registry service connection established during pipeline creation
   dockerRegistryServiceConnection: '1334c9f2-8660-437e-bd04-bd77122e1e84'
   imageRepository: 'hccyberresponse'
-  containerRegistry: 'irpcyberresponse.azurecr.io'
+  containerRegistry: 'cyberirp.azurecr.io'
   dockerfilePath: '$(Build.SourcesDirectory)/Dockerfile'
   tag: '$(Build.BuildId)'
 
