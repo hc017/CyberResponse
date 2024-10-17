@@ -14,7 +14,7 @@
 .hero_section {
   width: 100%;
   height: 100vh;
-  display: flex; /* Change to flexbox for side-by-side layout */
+  display: flex;
   flex: 0;
 }
 .leftside_HS {
@@ -42,12 +42,12 @@
   -webkit-text-fill-color: transparent;
 }
 .hero_hd2 {
-  width: 45.125rem; /* 722px converted to rem */
-  height: 4.1875rem; /* 67px converted to rem */
-  margin: 3.0625rem 0 2.625rem 0; /* Convert px values to rem */
+  width: 45.125rem;
+  height: 4.1875rem;
+  margin: 3.0625rem 0 2.625rem 0;
   background-image: linear-gradient(to bottom, #0080ff, #62848e);
   font-family: Roboto;
-  font-size: 2.8rem; /* 48px converted to rem */
+  font-size: 2.8rem;
   font-weight: 500;
   font-stretch: normal;
   font-style: normal;
@@ -59,12 +59,12 @@
   -webkit-text-fill-color: transparent;
 }
 .hero_hd3 {
-  width: 33.75rem; /* 540px converted to rem */
-  height: 3.0625rem; /* 47px converted to rem */
-  margin: 2.9375rem 11.375rem 0 0; /* Convert px values to rem */
+  width: 33.75rem;
+  height: 3.0625rem;
+  margin: 2.9375rem 11.375rem 0 0;
   background-image: linear-gradient(to bottom, #a9e3f4, #62848e);
   font-family: Roboto;
-  font-size: 2.8rem; /* 48px converted to rem */
+  font-size: 2.8rem;
   font-weight: 500;
   font-stretch: normal;
   font-style: normal;
@@ -77,14 +77,14 @@
 }
 
 .pp {
-  padding-top: 1.5625rem; /* 25px converted to rem */
+  padding-top: 1.5625rem;
 }
 .hero_sbh {
-  width: 40.75rem; /* 652px converted to rem */
-  height: 1.6875rem; /* 27px converted to rem */
-  margin: 1.8125rem 1.625rem 2.25rem 0; /* Convert px values to rem */
+  width: 40.75rem;
+  height: 1.6875rem;
+  margin: 1.8125rem 1.625rem 2.25rem 0;
   font-family: Roboto;
-  font-size: 1.375rem; /* 22px converted to rem */
+  font-size: 1.375rem;
   font-weight: 300;
   font-stretch: normal;
   font-style: normal;
@@ -96,17 +96,16 @@
 
 .left_bottom {
   padding-top: 1rem;
- /* Convert px values to rem */
 }
 
 .report_btn {
-  width: 25.25rem; /* 500px converted to rem */
-  height: 4.375rem; /* 70px converted to rem */
-  display: flex; /* Use flexbox */
-  justify-content: center; /* Center horizontally */
-  align-items: center; /* Center vertically */
-  margin-bottom: 5%; /* Convert px value to rem */
-  border-radius: 0.625rem; /* 10px converted to rem */
+  width: 25.25rem;
+  height: 4.375rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 5%;
+  border-radius: 0.625rem;
   background-image: linear-gradient(
     to right,
     #5a737a 0%,
@@ -118,25 +117,23 @@
 }
 
 .Report_text {
-  width: 19.3125rem; /* 308.7px converted to rem */
-  height: 4.375rem; /* 70px converted to rem */ /* Convert px values to rem */
-  text-shadow: 0 0.25rem 0.25rem rgba(0, 0, 0, 0.25); /* Convert px values to rem */
+  width: 19.3125rem;
+  height: 4.375rem;
+  text-shadow: 0 0.25rem 0.25rem rgba(0, 0, 0, 0.25);
   font-family: Roboto;
-  font-size: 1.5rem; /* 24px converted to rem */
+  font-size: 1.5rem;
   font-weight: 500;
   font-stretch: normal;
   font-style: normal;
-  line-height: 4.375rem; /* Center vertically */
+  line-height: 4.375rem;
   letter-spacing: normal;
   color: #101010;
 }
-
-
 .report_btn:hover {
-  width: 24rem; /* 502px converted to rem */
-  height: 4.5rem; /* 72px converted to rem */
-  padding: 0 5.04375rem 0 3.025rem; /* Convert px values to rem */
-  border-radius: 0.625rem; /* 10px converted to rem */
+  width: 24rem;
+  height: 4.5rem;
+  padding: 0 5.04375rem 0 3.025rem;
+  border-radius: 0.625rem;
   background-image: linear-gradient(
     to right,
     #68afc4 100%,
@@ -151,15 +148,13 @@
   margin: auto;
 }
 .hero_i {
-  height: 100%; /* 742px converted to rem */
-  width: 100%; /* 750px converted to rem */
+  height: 100%;
+  width: 100%;
 }
 
 .Home_usef{
   margin-top: 2%;
- 
 }
-
 
 @media (max-width: 768px) {
   .Home-Container {
@@ -167,7 +162,7 @@
     height: 400vh;
     margin: 0;
     flex-grow: 0;
-    border-radius: 0.5vw; /* Convert 2px to vw */
+    border-radius: 0.5vw;
     background-image: linear-gradient(
       to bottom,
       rgba(0, 0, 0, 0.85),
@@ -179,72 +174,70 @@
   .hero_section {
     width: 100vw;
     height: 100vh;
-    display: flex; /* Change to flexbox for side-by-side layout */
+    display: flex;
     flex: 0;
   }
   
   .leftside_HS {
     width: 50%;
     height: 100vh;
-    padding-left: 2.5vw; /* Convert 3.5rem to vw */
+    padding-left: 2.5vw;
     margin: 0;
     padding-top: 1.5vh;
   }
   
   .hero_CyberSoochna {
-    width: 6.6667vw; /* Convert 20rem to vw */
-    height: 1.5vh; /* Convert 3rem to vh */
+    width: 6.6667vw;
+    height: 1.5vh;
     margin: 0.4vh 0 3vh 0;
-    font-size: 3.2vw; /* Convert 4rem to vw */
+    font-size: 3.2vw;
   }
   
   .hero_hd2 {
-    width: 6.0167vw; /* Convert 45.125rem to vw */
-    height: 0.7188vh; /* Convert 4.1875rem to vh */
+    width: 6.0167vw;
+    height: 0.7188vh;
     margin: 3.0625vh 0 2.625vh 0;
-    font-size: 2.6667vw; /* Convert 3rem to vw */
+    font-size: 2.6667vw;
   }
   
   .hero_hd3 {
-    width: 4.5vw; /* Convert 33.75rem to vw */
-    height: 0.7188vh; /* Convert 3.0625rem to vh */
-    margin: 2.9375vh 8.6458vw 0 0; /* Convert 11.375rem to vw */
-    font-size: 2.6667vw; /* Convert 3rem to vw */
+    width: 4.5vw;
+    height: 0.7188vh;
+    margin: 2.9375vh 8.6458vw 0 0;
+    font-size: 2.6667vw;
   }
   
   .pp {
-    padding-top: 0.7813vh; /* Convert 1.5625rem to vh */
+    padding-top: 0.7813vh;
   }
   
   .hero_sbh {
-    width: 6.1875vw; /* Convert 40.75rem to vw */
-    height: 0.5938vh; /* Convert 1.6875rem to vh */
+    width: 6.1875vw;
+    height: 0.5938vh;
     margin: 1.8125vh 1.625vw 2.25vh 0;
-    font-size: 1.8333vw; /* Convert 1.375rem to vw */
+    font-size: 1.8333vw;
   }
   
   .left_bottom {
-    padding-top: 0.5208vh; /* Convert 1rem to vh */
-  }
+    padding-top: 0.5208vh;
+  }  
   
-  
-   */
   .rightside_HS {
     width: 50%;
     margin: auto;
   }
   
   .hero_i {
-    height: 80%; /* Keep as percentage */
-    width: 80%; /* Keep as percentage */
+    height: 80%;
+    width: 80%;
   }
   
   .em {
     border: 0;
-    width: 5.2604vw; /* Convert 39.0625rem to vw */
-    height: 0.5213vh; /* Convert 4.0125rem to vh */
-    border-radius: 0.3125vw; /* Convert 0.3125rem to vw */
-    box-shadow: 0 0.5208vh 0.5208vh 0 rgba(0, 0, 0, 0.25); /* Convert 0.25rem to vh */
+    width: 5.2604vw;
+    height: 0.5213vh;
+    border-radius: 0.3125vw;
+    box-shadow: 0 0.5208vh 0.5208vh 0 rgba(0, 0, 0, 0.25);
     color: white;
     background-image: linear-gradient(
       to right,
@@ -256,13 +249,8 @@
     );
     transform: translate(-50%, -50%);
   }
-  
- 
-
 }
 
-
-/* Add more media queries for other screen sizes as needed */
 .report-cybercrimes {
   background-color: #111;
   padding: 80px 0;
