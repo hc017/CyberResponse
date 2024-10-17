@@ -15,7 +15,6 @@
     background-image: linear-gradient(to right, #111, #431111 22%, #f00 50%, #151515 82%, #431111);
 }
 
-/* Responsive styles */
 @media screen and (max-width: 600px) {
     .em_component {
         font-size: 80%;
