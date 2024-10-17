@@ -20,12 +20,13 @@
     "react-on-screen": "^2.1.1",
     "react-phone-input-2": "^2.15.1",
     "react-router-dom": "^6.27.0",
-    "react-scripts": "^3.0.1",
-    "web-vitals": "^2.1.4"
+    "react-scripts": "^5.0.1",
+    "web-vitals": "^2.1.4",
+    "yoga-layout": "^3.1.0"
   },
   "scripts": {
     "start": "react-scripts start",
-    "build": "CI=false react-scripts build",
+    "build": "set CI=false&& react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "build:legacy": "NODE_OPTIONS=--openssl-legacy-provider react-scripts build"
