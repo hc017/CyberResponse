@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { useNavigate } from "react-router-dom";
+import { useNavigate, Link } from "react-router-dom";
 import "./ID_main.css";
 import UFPRed from "../UserDetails/UserForm/UFP_red";
 import UPBar from "../UserDetails/Userprofilebar/UP_bar";
