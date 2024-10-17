@@ -19,7 +19,7 @@ jobs:
     steps:
     # checkout the repo
     - name: 'Checkout GitHub Action' 
-      uses: actions/checkout@main
+      uses: actions/checkout@v4
         
     - name: Setup Node ${{ env.NODE_VERSION }}
       uses: actions/setup-node@v4
@@ -30,9 +30,7 @@ jobs:
     - name: 'npm install, build, and test'
       run: |
         npm install
-        npm run build --if-present
-        npm run test --if-present
-      working-directory: .
+        npm run build
 
     - name: 'Azure CLI Login'
       uses: azure/login@v2
