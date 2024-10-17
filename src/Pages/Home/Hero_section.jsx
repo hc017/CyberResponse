@@ -1,4 +1,4 @@
-import React, { useState, useEffect, useCallback } from "react";
+import React, { useState, useEffect, useCallback, useMemo } from "react";
 import "./Hero_section.css";
 import { Container, Col } from "react-bootstrap";
 import 'animate.css';
@@ -10,7 +10,7 @@ const Hero_section = () => {
   const [isDeleting, setIsDeleting] = useState(false);
   const [text, setText] = useState('');
   const [delta, setDelta] = useState(300 - Math.random() * 100);
-  const toRotate = [ "Cyber Threats", "Financial Frauds", "Cyber Crimes" ];
+  const toRotate = useMemo(() => ["Cyber Threats", "Financial Frauds", "Cyber Crimes"], []);
   const period = 2000;
 
   const tick = useCallback(() => {
@@ -68,4 +68,3 @@ const Hero_section = () => {
 }
 
 export default Hero_section;
-
