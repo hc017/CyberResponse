@@ -32,40 +32,40 @@
 }
 
 .ImgJoin img {
-    max-width: 100%; /* Ensure the image doesn't exceed the container's width */
-    max-height: 100%; /* Ensure the image doesn't exceed the container's height */
+    max-width: 100%;
+    max-height: 100%;
     object-fit: contain;
-    margin-bottom: 2%; /* Fit the image inside the container while maintaining its aspect ratio */
+    margin-bottom: 2%;
 }
 
 .JoinUsText {
     background-color: #000;
     width: 80%;
-    height: 100%; /* Fill the available height */
+    height: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
     margin: 0 auto;
-    opacity: 0; /* Initially hide the content */
-    transition: opacity 1s ease; /* Smooth transition for opacity */
+    opacity: 0;
+    transition: opacity 1s ease;
 }
 
 .JoinUsText.isVisible {
-    opacity: 1; /* Show the content when isVisible is true */
-    animation: slideFromLeft 1s ease; /* Animation for sliding in from left to right */
+    opacity: 1;
+    animation: slideFromLeft 1s ease;
 }
 
 @keyframes slideFromLeft {
     from {
-        transform: translateX(-100%); /* Start from outside the screen on the left */
+        transform: translateX(-100%);
     }
     to {
-        transform: translateX(0); /* Slide to the original position */
+        transform: translateX(0);
     }
 }
 .JoinUsText > * {
-    max-width: 100%; /* Ensure content does not exceed container's width */
-    max-height: 100%; /* Ensure content does not exceed container's height */
+    max-width: 100%;
+    max-height: 100%;
 }
 
 .TextDecoration{
@@ -82,32 +82,32 @@
 .AboutUsText {
     background-color: #000;
     width: 80%;
-    height: auto; /* Fill the available height */
+    height: auto;
     display: block;
     justify-content: center;
     align-items: center;
     margin-top: 1%;
-    opacity: 0; /* Initially hide the content */
-    transition: opacity 1s ease; /* Smooth transition for opacity */
+    opacity: 0;
+    transition: opacity 1s ease;
 }
 
 .AboutUsText.isVisible {
-    opacity: 1; /* Show the content when isVisible is true */
-    animation: slideFromRight 1s ease; /* Animation for sliding in from right to left */
+    opacity: 1;
+    animation: slideFromRight 1s ease;
 }
 
 @keyframes slideFromRight {
     from {
-        transform: translateX(100%); /* Start from outside the screen on the right */
+        transform: translateX(100%);
     }
     to {
-        transform: translateX(0); /* Slide to the original position */
+        transform: translateX(0);
     }
 }
 
 .AboutUsText > * {
-    max-width: 100%; /* Ensure content does not exceed container's width */
-    max-height: 100%; /* Ensure content does not exceed container's height */
+    max-width: 100%;
+    max-height: 100%;
 }
 
 .AboutTextContentJoin{
@@ -123,16 +123,16 @@
 
 .BannerContainer {
     width: 100%;
-    height: 50vh; /* Adjust height as needed */
+    height: 50vh;
     background-color: #18072B;
     position: relative; 
     margin-bottom: 3%;
-    overflow: hidden; /* Ensure the image is not displayed outside the container */
+    overflow: hidden;
 }
 
 .BannerImage {
-    width: 100%; /* Ensure the image fills the width of its container */
-    height: 100%; /* Ensure the image fills the height of its container */
-    object-fit: contain; /* Ensure the entire image fits within the container */
-    object-position: center; /* Center the image within the container */
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    object-position: center;
 }
