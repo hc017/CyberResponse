@@ -1,8 +1,8 @@
 import React, { useEffect, useState } from 'react';
 import "./DC.css";
 // import Em from "../../../components/Emergency/Em";
-import UFP_red from "../../UserDetails/UserForm/UFP_red";
-import UP_bar from '../../UserDetails/Userprofilebar/UP_bar';
+import UFPRed from "../../UserDetails/UserForm/UFP_red";
+import UPBar from '../../UserDetails/Userprofilebar/UP_bar';
 import { useNavigate } from 'react-router-dom';
 
 const DC = () => {
@@ -46,9 +46,9 @@ const DC = () => {
       <div className="DC_innercomponent">
         {/* <Em /> */}
         <div className="UD_up_bar"></div>
-        <UP_bar />
+        <UPBar />
         <div className="UD_up_bar"></div>
-        <UFP_red />
+        <UFPRed />
         <div className="UD_up_bar"></div>
 
         <div className="draft_table">

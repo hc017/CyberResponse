@@ -2,10 +2,9 @@ import React, { useState, useRef } from "react";
 import "./Suspect.css";
 import { Link, useNavigate } from "react-router-dom";
 // import Em from "../../components/Emergency/Em";
-import UFP_red from "../UserDetails/UserForm/UFP_red";
+import UFPRed from "../UserDetails/UserForm/UFP_red";
 import IDX from "./IDX";
-import { useParams } from "react-router-dom";
-import UP_bar from "../UserDetails/Userprofilebar/UP_bar";
+import UPBar from "../UserDetails/Userprofilebar/UP_bar";
 
 const SuspectD = () => {
   const [isCheckboxChecked, setIsCheckboxChecked] = useState(false);
@@ -15,7 +14,6 @@ const SuspectD = () => {
   const [fileChosen, setFileChosen] = useState("");
   const [showTable, setShowTable] = useState(false);
   const [suspectData, setSuspectData] = useState([]);
-  const { incidentId } = useParams();
   const fileInputRef = useRef(null); // Create a ref for the file input element
   const navigate = useNavigate();
 
@@ -71,11 +69,10 @@ const SuspectD = () => {
   return (
     <div className="SD_component">
       <div className="SD_innercomponent">
-        {/* <Em /> */}
         <div className="UD_up_bar"></div>
-        <UP_bar />
+        <UPBar />
         <div className="UD_up_bar"></div>
-        <UFP_red />
+        <UFPRed />
         <div className="UD_up_bar"></div>
         <IDX />
         <div className="SD_innerComp2">

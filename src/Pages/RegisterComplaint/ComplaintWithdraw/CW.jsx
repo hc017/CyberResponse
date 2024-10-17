@@ -1,8 +1,8 @@
 import React, { useState } from "react";
 import "./CW.css";
 // import Em from "../../../components/Emergency/Em";
-import UFP_red from "../../UserDetails/UserForm/UFP_red";
-import UP_bar from "../../UserDetails/Userprofilebar/UP_bar";
+import UFPRed from "../../UserDetails/UserForm/UFP_red";
+import UPBar from "../../UserDetails/Userprofilebar/UP_bar";
 
 const CW = () => {
   const [statusData, setStatusData] = useState([
@@ -27,7 +27,6 @@ const CW = () => {
       case: "Social Security Fraud",
       lastUpdate: "2024-05-03 08:00:00",
     },
-    // Additional dummy data for cybercrime incidents
     {
       id: 4,
       requestDate: "2024-05-03",
@@ -45,8 +44,12 @@ const CW = () => {
   ]);
 
   const handleAction = (id) => {
-    // Implement your action logic here based on the provided ID
-    console.log(`Action clicked for ID: ${id}`);
+    setStatusData((prevStatusData) =>
+      prevStatusData.map((item) =>
+        item.id === id ? { ...item, status: "Withdrawn" } : item
+      )
+    );
+    console.log(`Withdraw action clicked for ID: ${id}`);
   };
 
   return (
@@ -54,9 +57,9 @@ const CW = () => {
       <div className="CW_innercomponent">
         {/* <Em /> */}
         <div className="UD_up_bar"></div>
-        <UP_bar />
+        <UPBar />
         <div className="UD_up_bar"></div>
-        <UFP_red />
+        <UFPRed />
         <div className="UD_up_bar"></div>
         <div className="UD_up_bar"></div>
         <div className="CW_innerform">

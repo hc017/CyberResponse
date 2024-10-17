@@ -1,17 +1,17 @@
 import React from "react";
 import "./Home.css";
-import Hero_section from "./Hero_section";
+import HeroSection from "./Hero_section";
 import JoinUs from "./JoinUs/JoinUs";
 import About from "./About/About";
 import Banner1 from './stayonline.png'
 const Home = () => {
   return (
     <div class="Home-Container">
-       <Hero_section/>
+       <HeroSection/>
        <section class="report-cybercrimes">
     <div class="container">
         <div class="report-cybercrimes-content">
-            <h2 class="section-title"></h2>
+            <h2 class="section-title">title</h2>
             <p class="section-description">Help us fight cybercrimes by reporting any suspicious activities or incidents you encounter online.</p>
             <div class="report-count">
                 <span id="count">0</span>
@@ -20,11 +20,7 @@ const Home = () => {
         </div>
     </div>
 </section>
-
-
-
-     
-      
+  
       <div className="Home_usef">
         <About/>
         <div className="BannerContainer">

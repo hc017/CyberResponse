@@ -2,9 +2,9 @@ import React, { useState, useEffect } from "react";
 import { PDFViewer, Document, Page, Text, View, StyleSheet } from "@react-pdf/renderer";
 import { jsPDF } from "jspdf";
 import "./Complaint_details.css";
-import UFP_red from "../UserDetails/UserForm/UFP_red";
+import UFPRed from "../UserDetails/UserForm/UFP_red";
 import IDX from "./IDX";
-import UP_bar from "../UserDetails/Userprofilebar/UP_bar";
+import UPBar from "../UserDetails/Userprofilebar/UP_bar";
 // import Em from "../../Components/Emergency/Em";
 
 const styles = StyleSheet.create({
@@ -78,9 +78,9 @@ const Complaint_details = () => {
       <div className="CD_innercomponent">
         {/* <Em/> */}
         <div className="UD_up_bar"></div>
-        <UP_bar />
+        <UPBar />
         <div className="UD_up_bar"></div>
-        <UFP_red />
+        <UFPRed />
         <div className="UD_up_bar"></div>
         <IDX />
         <div className="CSD_innerComp2">

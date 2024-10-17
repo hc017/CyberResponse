@@ -9,7 +9,7 @@ const Footer = () => {
     <footer class="footer">
       <div class="footer__addr">
       <div className="image-remofgvsfvebg-preview-1">
-              <img src={Logo} alt="Description of the image" />
+              <img src={Logo} alt="Description of the company logo" />
             </div>
         <h1 class="footer__logo">CyberResponse</h1>
         <address>
@@ -24,15 +24,15 @@ const Footer = () => {
 
           <ul class="nav__ul">
             <li>
-              <a href="#">Instagram</a>
+              <a href="https://www.instagram.com">Instagram</a>
             </li>
 
             <li>
-              <a href="#">Youtube</a>
+              <a href="https://www.youtube.com">Youtube</a>
             </li>
 
             <li>
-              <a href="#">Twitter</a>
+              <a href="https://www.youtube.com">Twitter</a>
             </li>
           </ul>
         </li>
@@ -42,15 +42,15 @@ const Footer = () => {
 
           <ul class="nav__ul">
             <li>
-              <a href="#">Disclaimer</a>
+              <a href="https://www.youtube.com">Disclaimer</a>
             </li>
 
             <li>
-              <a href="#">Community</a>
+              <a href="https://www.youtube.com">Community</a>
             </li>
 
             <li>
-              <a href="#">FAQ</a>
+              <a href="https://www.youtube.com">FAQ</a>
             </li>
           </ul>
         </li>
@@ -60,15 +60,15 @@ const Footer = () => {
 
           <ul class="nav__ul">
             <li>
-              <a href="#">Privacy Policy</a>
+              <a href="https://www.youtube.com">Privacy Policy</a>
             </li>
 
             <li>
-              <a href="#">Terms of Use</a>
+              <a href="https://www.youtube.com">Terms of Use</a>
             </li>
 
             <li>
-              <a href="#">Sitemap</a>
+              <a href="https://www.youtube.com">Sitemap</a>
             </li>
           </ul>
         </li>

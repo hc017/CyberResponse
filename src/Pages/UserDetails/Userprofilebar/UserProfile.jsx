@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 // import Em from "../../../components/Emergency/Em";
-import UFP_red from "../UserForm/UFP_red";
-import UP_bar from "./UP_bar";
+import UFPRed from "../UserForm/UFP_red";
+import UPBar from "./UP_bar";
 import "./UserProfile.css";
 
 const UserProfile = () => {
@@ -46,9 +46,8 @@ const UserProfile = () => {
   return (
     <div className="UserP_component">
       <div className="UserD_innercomponent">
-        {/* <Em /> */}
-        <UP_bar />
-        <UFP_red />
+        <UPBar />
+        <UFPRed />
         <div className="innerform">
           <div className="CW_susdetail_bar">
             <p className="CW_sus_text">User Profile</p>

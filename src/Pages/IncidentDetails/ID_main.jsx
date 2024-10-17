@@ -1,17 +1,15 @@
 import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import "./ID_main.css";
-// import Em from "../../components/Emergency/Em";
-import UFP_red from "../UserDetails/UserForm/UFP_red";
-import { Link } from "react-router-dom";
-import UP_bar from "../UserDetails/Userprofilebar/UP_bar";
+import UFPRed from "../UserDetails/UserForm/UFP_red";
+import UPBar from "../UserDetails/Userprofilebar/UP_bar";
 import IDX from "./IDX";
 
 const ID_main = () => {
-  const [complaintCategory, setComplaintCategory] = useState("");
-  const [subCategory, setSubCategory] = useState("");
-  const [categories, setCategories] = useState([]);
-  const [subcategories, setSubcategories] = useState([]);
+  // const [complaintCategory, setComplaintCategory] = useState("");
+  // const [subCategory, setSubCategory] = useState("");
+  // const [categories, setCategories] = useState([]); // Removed unused state
+  // const [subcategories, setSubcategories] = useState([]); // Removed unused state
   const [ICdob, setICdob] = useState("");
   const [ICplace, setICPlace] = useState("");
   const [ICemail, setICEmail] = useState("");
@@ -23,10 +21,7 @@ const ID_main = () => {
   const navigate = useNavigate();
 
   const handleSaveAndSubmit = () => {
-    // Prepare data (without Firebase)
     const data = {
-      complaintCategory,
-      subCategory,
       other,
       DateTime: ICdob,
       Place: ICplace,
@@ -35,10 +30,9 @@ const ID_main = () => {
       delayReporting,
     };
 
-    // Here you can handle the data (e.g., send it to an API or process it)
     console.log("Data to save:", data);
-    window.alert("Data added successfully!"); // Show alert for user feedback
-    navigate("/suspectdetails"); // Navigate to the next page
+    window.alert("Data added successfully!");
+    navigate("/suspectdetails");
   };
 
   const handleInputChange = (e) => {
@@ -50,11 +44,10 @@ const ID_main = () => {
   return (
     <div className="ISD_component">
       <div className="ISD_innercomponent">
-        {/* <Em /> */}
         <div className="UD_up_bar"></div>
-        <UP_bar />
+        <UPBar />
         <div className="UD_up_bar"></div>
-        <UFP_red />
+        <UFPRed />
         <div className="UD_up_bar"></div>
         <IDX />
 
@@ -69,7 +62,6 @@ const ID_main = () => {
               <input
                 type="text"
                 className="ISD_vi_input"
-                value={complaintCategory} // Adjusted to use the state variable
                 readOnly
               />
             </div>
@@ -79,7 +71,6 @@ const ID_main = () => {
               <input
                 type="text"
                 className="ISD_vi_input"
-                value={subCategory} // Adjusted to use the state variable
                 readOnly
               />
             </div>
@@ -187,7 +178,9 @@ const ID_main = () => {
                 value={inputValue}
                 onChange={handleInputChange}
               />
-              <p className="ISD_lasttext">(Maximum of 1500 characters: {charsLeft} characters left)</p>
+              <p className="ISD_lasttext">
+                (Maximum of 1500 characters: {charsLeft} characters left)
+              </p>
             </div>
 
             <Link className="ss_save_btn2" id="ss_b" onClick={handleSaveAndSubmit}>

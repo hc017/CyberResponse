@@ -1,9 +1,9 @@
 import React, { useState, useEffect } from "react";
 import "./Submit.css";
 // import Em from "../../components/Emergency/Em";
-import UFP_red from "../UserDetails/UserForm/UFP_red";
+import UFPRed from "../UserDetails/UserForm/UFP_red";
 import IDX from "./IDX";
-import UP_bar from "../UserDetails/Userprofilebar/UP_bar";
+import UPBar from "../UserDetails/Userprofilebar/UP_bar";
 
 const Submit = () => {
   const [incidentDetails, setIncidentDetails] = useState(null);
@@ -34,9 +34,9 @@ const Submit = () => {
       <div className="CD_innercomponent">
         {/* <Em /> */}
         <div className="UD_up_bar"></div>
-        <UP_bar />
+        <UPBar />
         <div className="UD_up_bar"></div>
-        <UFP_red />
+        <UFPRed />
         <div className="UD_up_bar"></div>
         <IDX />
         <div className="CSD_innerComp2">

@@ -1,18 +1,16 @@
 import React from "react";
 import "./UP.css";
-// import Em from "../../../components/Emergency/Em";
-import UFP_red from "../../UserDetails/UserForm/UFP_red";
-import UP_bar from "../../UserDetails/Userprofilebar/UP_bar";
+import UFPRed from "../../UserDetails/UserForm/UFP_red";
+import UPBar from "../../UserDetails/Userprofilebar/UP_bar";
 
 const UP = () => {
   return (
     <div className="UP_component">
       <div className="UP_innercomponent">
-        {/* <Em /> */}
         <div className="UD_up_bar"></div>
-        <UP_bar />
+        <UPBar />
         <div className="UD_up_bar"></div>
-        <UFP_red />
+        <UFPRed />
         <div className="UD_up_bar"></div>
         <div className="UD_up_bar"></div>
         <div className="UP_innerform">
