@@ -1,0 +1,45 @@
+# Starter pipeline
+# Start with a minimal pipeline that you can customize to build and deploy your code.
+# Add steps that build, run tests, deploy, and more:
+# https://aka.ms/yaml
+
+trigger:
+- main
+
+pool:
+  vmImage: ubuntu-latest
+
+steps:
+- task: TerraformInstaller@2
+  inputs:
+    terraformVersion: 'latest'
+    
+- task: TerraformTaskV4@4
+  inputs:
+    provider: 'azurerm'
+    command: 'init'
+    backendServiceArm: 'Azure for Students (8fd70241-1e7c-431a-91b1-be11c2bbe677)'
+    backendAzureRmResourceGroupName: 'CyberResponse-backend'
+    backendAzureRmStorageAccountName: 'cyberresponse07'
+    backendAzureRmContainerName: 'irptfcontainer'
+    backendAzureRmKey: 'terraform.tfstate'
+
+- task: TerraformTaskV4@4
+  inputs:
+    provider: 'azurerm'
+    command: 'validate'
+
+- task: TerraformTaskV4@4
+  inputs:
+    provider: 'azurerm'
+    command: 'plan'
+    environmentServiceNameAzureRM: 'Azure for Students (8fd70241-1e7c-431a-91b1-be11c2bbe677)'
+
+- task: TerraformTaskV4@4
+  inputs:
+    provider: 'azurerm'
+    command: 'apply'
+    environmentServiceNameAzureRM: 'Azure for Students (8fd70241-1e7c-431a-91b1-be11c2bbe677)'
+    commandOptions: '-auto-approve' 
+
+
