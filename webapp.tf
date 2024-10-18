@@ -1,5 +1,5 @@
 # Create a resource group
-resource "azurerm_resource_group" "CyberResponse" {
+resource "azurerm_resource_group" "CyberResponse-rg" {
   name     = var.resource_group_name
   location = var.location
 }
@@ -7,8 +7,8 @@ resource "azurerm_resource_group" "CyberResponse" {
 # Create app service plan
 resource "azurerm_app_service_plan" "service-plan" {
   name                = "irp-service-plan"
-  location            = azurerm_resource_group.CyberResponse.location
-  resource_group_name = azurerm_resource_group.CyberResponse.name
+  location            = azurerm_resource_group.CyberResponse-rg.location
+  resource_group_name = azurerm_resource_group.CyberResponse-rg.name
   kind                = "Linux"
   reserved            = true
   sku {
@@ -23,8 +23,8 @@ resource "azurerm_app_service_plan" "service-plan" {
 # Create App Service for React app
 resource "azurerm_app_service" "app-service" {
   name                = "irp-react-app-service"
-  location            = azurerm_resource_group.CyberResponse.location
-  resource_group_name = azurerm_resource_group.CyberResponse.name
+  location            = azurerm_resource_group.CyberResponse-rg.location
+  resource_group_name = azurerm_resource_group.CyberResponse-rg.name
   app_service_plan_id = azurerm_app_service_plan.service-plan.id
 
   site_config {
