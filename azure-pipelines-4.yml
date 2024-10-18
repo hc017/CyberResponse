@@ -10,10 +10,10 @@ pool:
   vmImage: ubuntu-latest
 
 steps:
-- task: TerraformInstaller@2
+- task: JasonBJohnson.azure-pipelines-tasks-terraform.azure-pipelines-tasks-terraform-installer.TerraformInstaller@2
   inputs:
     terraformVersion: 'latest'
-    
+
 - task: TerraformTaskV4@4
   inputs:
     provider: 'azurerm'
@@ -40,6 +40,4 @@ steps:
     provider: 'azurerm'
     command: 'apply'
     environmentServiceNameAzureRM: 'Azure for Students (8fd70241-1e7c-431a-91b1-be11c2bbe677)'
-    commandOptions: '-auto-approve' 
-
-
+    commandOptions: '-auto-approve'
