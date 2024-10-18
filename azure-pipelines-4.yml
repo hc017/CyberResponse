@@ -22,3 +22,14 @@ steps:
     backendAzureRmStorageAccountName: 'cyberresponse07'
     backendAzureRmContainerName: 'irptfcontainer'
     backendAzureRmKey: 'terraform.tfstate'
+
+- task: TerraformCLI@2
+  inputs:
+    command: 'validate'
+    allowTelemetryCollection: true
+
+- task: TerraformTaskV4@4
+  inputs:
+    provider: 'azurerm'
+    command: 'plan'
+    environmentServiceNameAzureRM: 'Azure for Students (8fd70241-1e7c-431a-91b1-be11c2bbe677)'
