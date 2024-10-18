@@ -20,6 +20,24 @@ variables:
   vmImageName: 'ubuntu-latest'
 
 stages:
+- stage: SecurityCheck
+  displayName: Dependency Check Stage
+  jobs:
+  - job: DependencyCheck
+    displayName: OWASP Dependency Check
+    pool:
+      vmImage: $(vmImageName)
+    steps:
+    - task: dependency-check-build-task@6
+      displayName: Run OWASP Dependency Check
+      inputs:
+        projectName: 'CyberResponse'
+        scanPath: '$(Build.SourcesDirectory)'  # Root directory to include package.json files
+        exclude: '**/node_modules/**'           # Exclude node_modules to speed up the scan
+        format: 'HTML'
+        outputDirectory: '$(Build.ArtifactStagingDirectory)/dependency-check-report'
+        uploadReports: true
+
 - stage: Build
   displayName: Build and push stage
   jobs:
@@ -37,3 +55,10 @@ stages:
         containerRegistry: $(dockerRegistryServiceConnection)
         tags: |
           $(tag)
+
+ # Publish the OWASP Dependency Check report
+    - task: PublishBuildArtifacts@1
+      displayName: Publish Dependency Check Report
+      inputs:
+        PathtoPublish: '$(Build.ArtifactStagingDirectory)/dependency-check-report'
+        ArtifactName: 'OWASP-Dependency-Check-Report'
