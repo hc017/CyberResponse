@@ -13,7 +13,6 @@ steps:
 - task: JasonBJohnson.azure-pipelines-tasks-terraform.azure-pipelines-tasks-terraform-installer.TerraformInstaller@2
   inputs:
     terraformVersion: 'latest'
-
 - task: TerraformTaskV4@4
   inputs:
     provider: 'azurerm'
@@ -23,21 +22,3 @@ steps:
     backendAzureRmStorageAccountName: 'cyberresponse07'
     backendAzureRmContainerName: 'irptfcontainer'
     backendAzureRmKey: 'terraform.tfstate'
-
-- task: TerraformTaskV4@4
-  inputs:
-    provider: 'azurerm'
-    command: 'validate'
-
-- task: TerraformTaskV4@4
-  inputs:
-    provider: 'azurerm'
-    command: 'plan'
-    environmentServiceNameAzureRM: 'Azure for Students (8fd70241-1e7c-431a-91b1-be11c2bbe677)'
-
-- task: TerraformTaskV4@4
-  inputs:
-    provider: 'azurerm'
-    command: 'apply'
-    environmentServiceNameAzureRM: 'Azure for Students (8fd70241-1e7c-431a-91b1-be11c2bbe677)'
-    commandOptions: '-auto-approve'
