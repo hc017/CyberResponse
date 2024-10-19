@@ -35,7 +35,6 @@ stages:
         scanPath: '$(Build.SourcesDirectory)'  # Root directory to include package.json files
         exclude: '**/node_modules/**'           # Exclude node_modules to speed up the scan
         format: 'HTML'
-        outputDirectory: '$(Build.ArtifactStagingDirectory)/dependency-check-report'
         uploadReports: true
 
 - stage: Build
@@ -60,5 +59,5 @@ stages:
     - task: PublishBuildArtifacts@1
       displayName: Publish Dependency Check Report
       inputs:
-        PathtoPublish: '$(Build.ArtifactStagingDirectory)/dependency-check-report'
+        PathtoPublish: '**/dependency-check-report*'
         ArtifactName: 'OWASP-Dependency-Check-Report'
